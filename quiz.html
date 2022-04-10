@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Herbal ReLeaf | Quiz</title>
+  </head>
+  <body>
+    <div class="app-quiz">
+      <header class="flex jst-sb align-center header text-md container">
+        <h1>
+          <img src="assets/images/herblogo.png" alt="herbal releaf logo" class="logo" />
+        </h1>
+        <div class="flex align-center gap-2">
+          <div class="flex align-center gap-1">
+            <button class="btn btn-secondary">Login</button>
+            <button class="btn btn-primary">Sign Up</button>
+          </div>
+          <div class="flex gap-1">
+            <img src="assets/icons/user.svg" alt="user icon" class="icon" />
+            <img src="assets/icons/bell.svg" alt="notification icon" class="icon" />
+            <img src="assets/icons/shopping-bag.svg" alt="shopping bag icon" class="icon" />
+          </div>
+        </div>
+      </header>
+      <nav class="container">
+        <div class="flex jst-around">
+          <a href="index.html" class="page-link text-md text-bold">Home</a>
+          <a href="categories.html" class="page-link text-md text-bold">Categories</a>
+          <a href="herbs.html" class="page-link text-md text-bold">Herbs</a>
+          <a href="shop.html" class="page-link text-md text-bold">Shop</a>
+          <a href="quiz.html" class="page-link text-md text-bold">Quiz</a>
+        </div>
+      </nav>
+      <main>
+        <div class="container full-height pt-10 px-40">
+          <h2 class="text-upper text-xl mb-3">Quiz</h2>
+          <p class="text-lg mb-3">
+            On the scale, choose what fits you. Fill out the quiz to find out which herbs are best for you
+          </p>
+          <form class="flex col gap-xl">
+            <fieldset>
+              <p class="text-lg mb-1">Do you have a hard time falling asleep?</p>
+              <div class="flex jst-sb">
+                <fieldset class="flex col align-center gap-1">
+                  <input type="radio" id="fall_asleep_not_often" name="fall_asleep" value="not_often" />
+                  <label class="text-md" for="not_often">Not Often</label>
+                </fieldset>
+                <fieldset class="flex col align-center gap-1">
+                  <input type="radio" id="fall_asleep_sometimes" name="fall_asleep" value="sometimes" />
+                  <label class="text-md" for="sometimes">Sometimes</label>
+                </fieldset>
+                <fieldset class="flex col align-center gap-1">
+                  <input type="radio" id="fall_asleep_neutral" name="fall_asleep" value="neutral" />
+                  <label class="text-md" for="neutral">Neutral</label>
+                </fieldset>
+                <fieldset class="flex col align-center gap-1">
+                  <input type="radio" id="fall_asleep_often" name="fall_asleep" value="often" />
+                  <label class="text-md" for="often">Often</label>
+                </fieldset>
+                <fieldset class="flex col align-center gap-1">
+                  <input type="radio" id="fall_asleep_not_often" name="fall_asleep" value="very_often" />
+                  <label class="text-md" for="very_often">Very Often</label>
+                </fieldset>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <p class="text-lg mb-1">Do you have joint pain?</p>
+              <div class="flex jst-sb">
+                <fieldset class="flex col align-center gap-1">
+                  <input type="radio" id="join_pain_not_often" name="join_pain" value="not_often" />
+                  <label class="text-md" for="not_often">Not Often</label>
+                </fieldset>
+                <fieldset class="flex col align-center gap-1">
+                  <input type="radio" id="join_pain_sometimes" name="join_pain" value="sometimes" />
+                  <label class="text-md" for="sometimes">Sometimes</label>
+                </fieldset>
+                <fieldset class="flex col align-center gap-1">
+                  <input type="radio" id="join_pain_neutral" name="join_pain" value="neutral" />
+                  <label class="text-md" for="neutral">Neutral</label>
+                </fieldset>
+                <fieldset class="flex col align-center gap-1">
+                  <input type="radio" id="join_pain_often" name="join_pain" value="often" />
+                  <label class="text-md" for="often">Often</label>
+                </fieldset>
+                <fieldset class="flex col align-center gap-1">
+                  <input type="radio" id="join_pain_not_often" name="join_pain" value="very_often" />
+                  <label class="text-md" for="very_often">Very Often</label>
+                </fieldset>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <p class="text-lg mb-1">Do you have asthma?</p>
+              <div class="flex jst-sb">
+                <fieldset class="flex col align-center gap-1">
+                  <input type="radio" id="asthma_not_often" name="asthma" value="not_often" />
+                  <label class="text-md" for="not_often">Not Often</label>
+                </fieldset>
+                <fieldset class="flex col align-center gap-1">
+                  <input type="radio" id="asthma_sometimes" name="asthma" value="sometimes" />
+                  <label class="text-md" for="sometimes">Sometimes</label>
+                </fieldset>
+                <fieldset class="flex col align-center gap-1">
+                  <input type="radio" id="asthma_neutral" name="asthma" value="neutral" />
+                  <label class="text-md" for="neutral">Neutral</label>
+                </fieldset>
+                <fieldset class="flex col align-center gap-1">
+                  <input type="radio" id="asthma_often" name="asthma" value="often" />
+                  <label class="text-md" for="often">Often</label>
+                </fieldset>
+                <fieldset class="flex col align-center gap-1">
+                  <input type="radio" id="asthma_not_often" name="asthma" value="very_often" />
+                  <label class="text-md" for="very_often">Very Often</label>
+                </fieldset>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <p class="text-lg mb-1">Do you experience stomach pain?</p>
+              <div class="flex jst-sb">
+                <fieldset class="flex col align-center gap-1">
+                  <input type="radio" id="stomach_pain_not_often" name="stomach_pain" value="not_often" />
+                  <label class="text-md" for="not_often">Not Often</label>
+                </fieldset>
+                <fieldset class="flex col align-center gap-1">
+                  <input type="radio" id="stomach_pain_sometimes" name="stomach_pain" value="sometimes" />
+                  <label class="text-md" for="sometimes">Sometimes</label>
+                </fieldset>
+                <fieldset class="flex col align-center gap-1">
+                  <input type="radio" id="stomach_pain_neutral" name="stomach_pain" value="neutral" />
+                  <label class="text-md" for="neutral">Neutral</label>
+                </fieldset>
+                <fieldset class="flex col align-center gap-1">
+                  <input type="radio" id="stomach_pain_often" name="stomach_pain" value="often" />
+                  <label class="text-md" for="often">Often</label>
+                </fieldset>
+                <fieldset class="flex col align-center gap-1">
+                  <input type="radio" id="stomach_pain_not_often" name="stomach_pain" value="very_often" />
+                  <label class="text-md" for="very_often">Very Often</label>
+                </fieldset>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </main>
+      <footer class="flex jst-around container footer text-white">
+        <div class="flex col text-md jst-center align-center gap-sm">
+          <h2 class="text-lg text-black">Join Herbal ReLeaf</h2>
+          <p class="text-lg">Sign up for our newsletter!</p>
+          <form class="flex col gap-sm">
+            <input type="text" name="first-name" placeholder="First Name" class="input" />
+            <input type="text" name="last-name" placeholder="Last Name" class="input" />
+            <input type="email" name="email" placeholder="Email" class="input" />
+            <button type="submit" class="btn btn-primary">Get Releaf</button>
+          </form>
+        </div>
+        <div class="flex col text-md gap-1">
+          <h2 class="text-lg text-upper mb-1">Talk to us</h2>
+          <div>FAQs</div>
+          <div>General Inquiries</div>
+          <div>Careers</div>
+          <div>Events and Catering</div>
+          <div>Fund Raising</div>
+          <div>Donation Request</div>
+          <div>News & Events</div>
+        </div>
+        <div class="flex col text-md align-center gap-1 mb-1">
+          <h2>Social Media</h2>
+          <div class="flex gap-2">
+            <div class="social flex jst-center align-center">
+              <img src="assets/icons/twitter.svg" alt="twitter" class="icon" />
+            </div>
+            <div class="social flex jst-center align-center">
+              <img src="assets/icons/instagram.svg" alt="instagram" class="icon" />
+            </div>
+            <div class="social flex jst-center align-center">
+              <img src="assets/icons/facebook.svg" alt="facebook" class="icon" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

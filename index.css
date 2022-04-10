@@ -1,0 +1,369 @@
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  color: var(--dark);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  --dark: #4a286d;
+  --medium: #ac9bba;
+  --light: #cdc4d7;
+  --ex-light: #dfdbe4;
+}
+
+
+
+
+/* Layout */
+.container {
+  padding: 1.6rem;
+  padding-inline: 3.2rem;
+}
+
+.main {
+  min-height: calc(100vh - 3.2rem);
+}
+
+.offset-x-10 {
+  transform: translateX(10%);
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.pt-10 {
+  padding-top: 10rem;
+}
+
+.px-10 {
+  padding-inline: 10rem;
+}
+
+.px-40 {
+  padding-inline: 40rem;
+}
+
+.max-width-20 {
+  max-width: 20rem;
+}
+
+.max-width-30 {
+  max-width: 30rem;
+}
+
+.max-width-50 {
+  max-width: 50rem;
+}
+
+/* viewport units
+
+  vw -> viewport width
+  vh -> viewport height
+  vmin -> smaller of vh and vw
+  vmax -> larger of vh and vw
+
+*/
+
+
+/* relative units
+  em -> relative to the parent
+  rem -> relative to the document
+*/
+
+.header, .main, .footer {
+  position: relative;
+  z-index: 0;
+}
+
+.footer {
+  background-color:hsla(273, 22%, 55%, .5);
+  padding: 3.2rem;
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+.half-height {
+  min-height: 50vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.jst-even {
+  justify-content: space-evenly;
+}
+
+.jst-around {
+  justify-content: space-around;
+}
+
+.jst-sb {
+  justify-content: space-between;
+}
+
+.jst-center {
+  justify-content: center;
+}
+
+.gap-sm {
+  gap: 0.6rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 1.6rem;
+}
+
+.gap-3 {
+  gap: 3.2rem;
+}
+
+.gap-xl {
+  gap: 6.4rem;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.col-3 {
+  grid-template-columns: repeat(3, 35rem);
+  place-items: center;
+}
+
+.col-2 {
+  grid-template-columns: repeat(2, 50rem);
+  place-items: center;
+}
+
+.input {
+  padding: 1.6rem;
+  border-radius: 10px;
+  border: none;
+}
+
+
+/* Color  */
+
+/* body {
+  background-color: #cdc4d7;
+} */
+
+
+/* Typography */
+
+.text-md {
+  font-size: 1.6rem;
+}
+
+.text-lg {
+  font-size: 2rem;
+}
+
+.text-xl {
+  font-size: 3.6rem;
+}
+
+.text-2xl {
+  font-size: 4.8rem;
+}
+
+.text-huge {
+  font-size: 9.6rem;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-black {
+  font-weight: 900;
+}
+
+.text-dark {
+  color: var(--dark);
+}
+
+.text-white {
+  color: white;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+
+.page-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--dark)
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+
+.btn {
+  padding: 1.6rem;
+  padding-inline: 3.2rem;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+.btn-secondary {
+  background-color: transparent;
+}
+
+.btn-primary {
+  color: white;
+  background-color: var(--dark);
+}
+
+
+/* Logo  */
+.logo {
+  height: 5rem;
+  width: 12.5rem;
+}
+
+/* Images  */
+
+.icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  stroke: #4c286e;
+}
+
+.social {
+  background-color: white;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+
+.app {
+  background-image: url('assets/images/simplehomepage-xs.png');
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+.app-herbs {
+  background-image: url('assets/images/herbsbg-small.png');
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+
+.app-categories {
+  background-image: url('assets/images/categoriesbg-small.png');
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+
+.app-shop {
+  background-image: url('assets/images/shopbg-small.png');
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+
+.app-quiz {
+  background-image: url('assets/images/quizbg-small.png');
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+
+.category-image {
+  height: 12.5rem;
+  width: 12.5rem;
+}
+
+.category-image-large {
+  height: 25rem;
+  width: 25rem;
+}
+
+
+.product-image {
+  width: 40rem;
+  height: auto;
+}
