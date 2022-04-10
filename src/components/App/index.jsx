@@ -1,3 +1,5 @@
+import { Router } from '@reach/router';
+
 import './App.css';
 import Header from '../Header';
 import Main from '../Main';
@@ -9,7 +11,9 @@ function App() {
     <div className="app">
       <Header />
       <Nav />
-      <Main />
+      <Router>
+        <Main path="/" />
+      </Router>
       <Footer />
     </div>
   );

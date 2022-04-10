@@ -53,12 +53,19 @@ html {
 
 :root {
   --dark: #4a286d;
+  --medium: #ac9bba;
+  --light: #cdc4d7;
+  --ex-light: #dfdbe4;
 }
 
 /* Layout */
 .container {
   padding: 1.6rem;
   padding-inline: 3.2rem;
+}
+
+.full-height {
+  min-height: 100vh;
 }
 
 .flex {
@@ -114,8 +121,16 @@ body {
   font-size: 1.6rem;
 }
 
+.text-xl {
+  font-size: 3.6rem;
+}
+
 .text-bold {
   font-weight: 700;
+}
+
+.text-dark {
+  color: var(--dark);
 }
 
 .page-link {
@@ -140,6 +155,10 @@ body {
 .btn-primary {
   color: white;
   background-color: var(--dark);
+}
+
+.btn-round {
+  border-radius: 25px;
 }
 
 /* Logo  */
@@ -173,7 +192,8 @@ body {
 }
 
 .app {
-  background-image: url('../../assets/images/simplehomepage-small.png');
+  background-color: var(--light);
+  /* background-image: url('../../assets/images/simplehomepage-small.png'); */
   background-size: 100vw;
   background-repeat: no-repeat;
 }

@@ -6,7 +6,7 @@ import facebook from '../../assets/icons/facebook.svg';
 
 const Footer = () => {
   return (
-    <footer className="flex jst-even container">
+    <footer className="flex jst-even container footer">
       <div className="flex col text-md jst-center align-center gap-sm">
         <h2>Join Herbal ReLeaf</h2>
         <p>Sign up for our newsletter!</p>

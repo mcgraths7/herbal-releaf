@@ -1,23 +1,24 @@
 import React from 'react';
+import { Link } from '@reach/router';
 
 const Nav = () => {
   return (
     <nav className="flex jst-even container">
-      <a href="/" className="page-link text-md text-bold">
+      <Link to="/" className="page-link text-md text-bold">
         Home
-      </a>
-      <a href="/" className="page-link text-md text-bold">
+      </Link>
+      <Link to="/" className="page-link text-md text-bold">
         Categories
-      </a>
-      <a href="/" className="page-link text-md text-bold">
+      </Link>
+      <Link to="/" className="page-link text-md text-bold">
         Herbs
-      </a>
-      <a href="/" className="page-link text-md text-bold">
+      </Link>
+      <Link to="/" className="page-link text-md text-bold">
         Shop
-      </a>
-      <a href="/" className="page-link text-md text-bold">
+      </Link>
+      <Link to="/" className="page-link text-md text-bold">
         Quiz
-      </a>
+      </Link>
     </nav>
   );
 };
