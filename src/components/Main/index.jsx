@@ -1,8 +1,10 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './Main.css';
 const Main = () => {
   return (
     <main className="main">
+      <Helmet />
       <div className="flex col align-center jst-center full-height gap-1">
         <h3 className="flex col align-center jst-center text-xl text-dark gap-sm">
           <p>Find your relief with</p>
