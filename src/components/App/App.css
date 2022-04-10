@@ -160,6 +160,6 @@ body {
 
 .app {
   background-image: url('../../assets/images/simplehomepage-small.png');
-  background-size: cover;
+  background-size: 100vw;
   background-repeat: no-repeat;
 }
