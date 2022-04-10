@@ -51,6 +51,10 @@ html {
   font-size: 62.5%;
 }
 
+:root {
+  --dark: #4a286d;
+}
+
 /* Layout */
 .container {
   padding: 1.6rem;
@@ -110,6 +114,16 @@ body {
   font-size: 1.6rem;
 }
 
+.text-bold {
+  font-weight: 700;
+}
+
+.page-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--dark)
+}
+
 /* Buttons */
 .btn {
   padding: 1.6rem;
@@ -125,7 +139,7 @@ body {
 
 .btn-primary {
   color: white;
-  background-color: #4a286d;
+  background-color: var(--dark);
 }
 
 /* Logo  */
